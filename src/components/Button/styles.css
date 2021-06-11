@@ -1,0 +1,13 @@
+.button {
+    width: 200px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+.button_variant-primary {
+    background-color: #5733C7;
+}
+
+.button_variant-secondary {
+    background-color: rgba(171, 152, 231, 20);
+}

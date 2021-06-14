@@ -1,0 +1,26 @@
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    padding-right: 3em;
+    color: #C2C2C2;
+
+    font-family: 'Gilroy', 'sans-serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 19px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav__item:last-child {
+    padding-right: 0;
+}
+
+.nav__item_icon, .nav__item_icon picture, img, source {
+    width: 1.5rem;
+    height: 1.5rem;
+}

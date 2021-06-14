@@ -6,3 +6,15 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.main__header {
+    padding-top: 2rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.main__content {
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+

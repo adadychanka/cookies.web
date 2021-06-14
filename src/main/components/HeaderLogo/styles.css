@@ -1,0 +1,22 @@
+.header-logo {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+}
+
+.header-logo__icon, .header-logo__icon picture, img, source  {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-right: 0.25rem;
+}
+
+.header-logo__title {
+    color: #FFFFFF;
+
+    font-family: Gilroy, 'sans-serif';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.75rem;
+    line-height: 35px;
+    letter-spacing: -2.2px;
+}

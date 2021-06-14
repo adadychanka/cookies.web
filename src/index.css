@@ -15,3 +15,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+    font-family: Gilroy;
+    src: url("./assets/fonts/Gilroy-Light.otf") format('woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url("./assets/fonts/Gilroy-ExtraBold.otf") format('woff');
+    font-weight: bold;
+}

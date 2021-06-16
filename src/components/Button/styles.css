@@ -1,13 +1,30 @@
 .button {
-    width: 200px;
-    height: 48px;
-    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 7rem;
+    border-radius: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+
+    text-decoration: none;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 21px;
 }
 
 .button_variant-primary {
+    color: #FFFFFF;
     background-color: #5733C7;
 }
 
 .button_variant-secondary {
-    background-color: rgba(171, 152, 231, 20);
+    color: #8468da;
+    background-color: rgba(171, 152, 231, 0.2);
+    backdrop-filter: blur(12px);
 }

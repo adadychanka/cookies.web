@@ -1,6 +1,5 @@
-import Button, { variants } from "./Button";
+import Button from "./Button";
+import LinkButton from "./LinkButton";
+import { variants as ButtonVariants } from "./utils";
 
-export default {
-  Button,
-  ButtonVariants: variants,
-};
+export { Button, LinkButton, ButtonVariants };

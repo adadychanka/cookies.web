@@ -1,7 +1,8 @@
 .main {
     height: 100%;
     background-color: #000000;
-    background-image: url('/src/main/assets/background.png');
+    /*background-image: url('/src/main/assets/background.png');*/
+    background-image: url('/src/main/assets/background-light.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,6 +15,7 @@
 }
 
 .main__content {
+    padding-top: 3rem;
     padding-left: 7rem;
     padding-right: 7rem;
 }

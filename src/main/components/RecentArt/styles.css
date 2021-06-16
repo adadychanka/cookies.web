@@ -1,0 +1,61 @@
+.recent-art {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.recent-art__chips {
+    display: flex;
+    align-items: center;
+}
+.recent-art .chip {
+    margin-right: 0.5rem;
+}
+
+.recent-art .chip:last-child {
+    margin-right: 0;
+}
+
+.recent-art__info {
+    padding-top: 1rem;
+}
+
+.recent-art__title {
+    color: #FFFFFF;
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6.5rem;
+    line-height: 7rem;
+    letter-spacing: -3px;
+}
+
+.recent-art__description {
+    color: #FFFFFF;
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.recent-art__actions {
+    display: flex;
+    flex-flow: row nowrap;
+
+    padding-top: 6rem;
+}
+
+.recent-art__actions .recent-art__actions-item {
+    margin-right: 1.5rem;
+}
+
+.recent-art__actions .recent-art__actions-item:last-child {
+    margin-right: 0;
+}
+
+.recent-art__card {
+    min-width: 40%;
+}

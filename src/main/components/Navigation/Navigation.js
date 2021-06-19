@@ -1,7 +1,6 @@
 import React from "react";
 
-import raribleLogo from "../../assets/raribleLogo.png";
-import twitterLogo from "../../assets/twitterLogo.png";
+import { raribleLogo, twitterLogo } from "../../assets";
 import "./styles.css";
 
 const Nav = () => {

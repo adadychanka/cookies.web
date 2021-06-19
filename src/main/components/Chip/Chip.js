@@ -7,12 +7,7 @@ const Chip = ({ img = null, text }) => {
 
   return (
     <div className="chip">
-      {src && (
-        <picture className="chip__picture">
-          <source src={src} />
-          <img src={src} />
-        </picture>
-      )}
+      {src && <img className="chip__picture" src={src} />}
       {emoji && <div className="chip__picture">{emoji}</div>}
       {text}
     </div>

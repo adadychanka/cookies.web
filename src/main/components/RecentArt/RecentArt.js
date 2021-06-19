@@ -1,10 +1,9 @@
 import React, { useMemo } from "react";
 import Chip from "../Chip";
-import raribleIcon from "../../assets/rarible-icon.png";
-import dogecoinIcon from "../../assets/dogecoin-icon.png";
-import "./styles.css";
 import { LinkButton, ButtonVariants } from "../../../components/Button";
 import ArtCard from "../ArtCard";
+import { raribleIcon, dogecoinIcon } from "../../assets";
+import "./styles.css";
 
 const TAGS = [
   { value: "HOT DROP", img: "🔥" },

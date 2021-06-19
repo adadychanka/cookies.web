@@ -4,7 +4,10 @@
     align-items: baseline;
 }
 
-.header-logo__icon, .header-logo__icon picture, img, source  {
+.header-logo__icon,
+.header-logo__icon picture,
+.header-logo__icon img,
+.header-logo__icon source  {
     width: 1.5rem;
     height: 1.5rem;
     padding-right: 0.25rem;

@@ -20,7 +20,10 @@
     padding-right: 0;
 }
 
-.nav__item_icon, .nav__item_icon picture, img, source {
+.nav__item_icon,
+.nav__item_icon picture,
+.nav__item_icon img,
+.nav__item_icon source {
     width: 1.5rem;
     height: 1.5rem;
 }

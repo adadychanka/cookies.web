@@ -1,0 +1,126 @@
+.art-card {
+    display: flex;
+    flex-flow: column nowrap;
+
+    width: 25rem;
+    height: 35rem;
+
+    padding: 1.5rem;
+
+    background: rgba(18, 18, 18, 0.15);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    backdrop-filter: blur(24px);
+}
+
+.art-card__header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 1rem;
+}
+
+.art-card__avatars {
+    display: flex;
+}
+
+.art-card__avatar {
+    margin-left: -1rem;
+}
+.art-card__avatar:first-child {
+    margin-left: 0;
+}
+
+.art-card__body {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.art-card__art {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    padding-bottom: 1rem;
+}
+
+.art-card__name {
+    padding-bottom: 1rem;
+    color: #FFFFFF;
+
+    font-family: Gilroy, 'sans-serif';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.25rem;
+    line-height: 22px;
+}
+
+.art-card__price {
+    color: rgba(255, 255, 255, 0.5);
+
+    font-family: Gilroy, 'sans-serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.825rem;
+    line-height: 1rem;
+}
+
+.art-card__footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    padding-top: 1rem;
+}
+
+.art-card__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.art-card__action-icon {
+    width: 13px;
+    height: 13px;
+}
+
+.art-card__action-text {
+    padding-left: 0.25rem;
+    color: #FDDA02;
+
+    font-family: Gilroy, 'sans-serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.art-card__like {
+    display: flex;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.art-card__like-icon {
+    display: block;
+    color: #FFFFFF;
+
+    width: 1rem;
+    height: 1rem;
+}
+
+.art-card__like-amount {
+    padding-left: 0.5rem;
+    color: #FFFFFF;
+
+    font-family: Gilroy, 'sans-serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.825rem;
+    line-height: 1rem;
+
+
+}

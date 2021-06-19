@@ -4,6 +4,7 @@ import raribleIcon from "../../assets/rarible-icon.png";
 import dogecoinIcon from "../../assets/dogecoin-icon.png";
 import "./styles.css";
 import { LinkButton, ButtonVariants } from "../../../components/Button";
+import ArtCard from "../ArtCard";
 
 const TAGS = [
   { value: "HOT DROP", img: "🔥" },
@@ -21,7 +22,7 @@ const RecentArt = () => {
 
   return (
     <div className="recent-art">
-      <div>
+      <div className="recent-art__art-info">
         <div className="recent-art__chips">{chips}</div>
         <div className="recent-art__info">
           <div className="recent-art__title">Dogecoin Prediction Ball</div>
@@ -43,9 +44,14 @@ const RecentArt = () => {
             />
           </div>
         </div>
+        <div className="recent-art__team-text">
+          Our team truly believes that the future will belong to people like us. Our goal is to create something new and
+          move NFT forward. We are glad to present you our first work in a series of interactive NFT projects! The work
+          is done in the style of a very promising currency of the future: Dogecoin!
+        </div>
       </div>
       <div className="recent-art__card">
-        <div>CARD</div>
+        <ArtCard />
       </div>
     </div>
   );

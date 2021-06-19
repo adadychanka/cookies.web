@@ -1,7 +1,11 @@
 .recent-art {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.recent-art__art-info {
+    max-width: 35%;
 }
 
 .recent-art__chips {
@@ -23,7 +27,7 @@
 .recent-art__title {
     color: #FFFFFF;
 
-    font-family: Gilroy;
+    font-family: Gilroy, 'sans-serif';
     font-style: normal;
     font-weight: bold;
     font-size: 6.5rem;
@@ -34,7 +38,7 @@
 .recent-art__description {
     color: #FFFFFF;
 
-    font-family: Gilroy;
+    font-family: Gilroy, 'sans-serif';
     font-style: normal;
     font-weight: 300;
     font-size: 1.5rem;
@@ -56,6 +60,18 @@
     margin-right: 0;
 }
 
+.recent-art__team-text {
+    padding-top: 2rem;
+
+    color: #FFFFFF;
+
+    font-family: Gilroy, 'sans-serif';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
 .recent-art__card {
-    min-width: 40%;
+    padding-left: 5rem;
 }

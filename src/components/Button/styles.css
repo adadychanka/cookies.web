@@ -10,8 +10,12 @@
     padding-left: 3.5rem;
     padding-right: 3.5rem;
 
+    border: 0;
+
     text-decoration: none;
-    font-family: Gilroy;
+    cursor: pointer;
+
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: bold;
     font-size: 1rem;
@@ -19,7 +23,7 @@
 }
 
 .button_variant-primary {
-    color: #FFFFFF;
+    color: var(--main-text-color);
     background-color: #5733C7;
 }
 

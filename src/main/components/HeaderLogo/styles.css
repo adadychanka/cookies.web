@@ -14,9 +14,9 @@
 }
 
 .header-logo__title {
-    color: #FFFFFF;
+    color: var(--main-text-color);
 
-    font-family: Gilroy, 'sans-serif';
+    font-family: var(--main-font);
     font-style: italic;
     font-weight: 900;
     font-size: 1.75rem;

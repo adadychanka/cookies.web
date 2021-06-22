@@ -25,3 +25,9 @@ html, body, #root {
     src: url("../assets/fonts/Gilroy-ExtraBold.otf") format('woff');
     font-weight: bold;
 }
+
+:root {
+    --main-text-color: #FFFFFF;
+
+    --main-font: Gilroy, -apple-system, BlinkMacSystemFont, 'sans-serif';
+}

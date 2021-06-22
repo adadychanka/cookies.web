@@ -1,20 +1,15 @@
 import React from "react";
-import Avatar from "../Avatar";
-import { likeIcon, meatballsMenu, mikitaAvatar, raribleLogo, dogePredictionBallArt, raribleAvatar } from "../../assets";
+import { dogePredictionBallArt, meatballsMenu, raribleLogo } from "../../assets";
+import CardAvatars from "../../../components/CardAvatars/CardAvatars";
+import LikeCounter from "../../../components/LikeCounter";
+import { AVATARS } from "../../../constants";
 import "./styles.css";
 
 const ArtCard = () => {
   return (
     <div className="art-card">
       <div className="art-card__header">
-        <div className="art-card__avatars">
-          <div className="art-card__avatar">
-            <Avatar width={39} height={39} src={raribleAvatar} />
-          </div>
-          <div className="art-card__avatar">
-            <Avatar width={39} height={39} src={mikitaAvatar} />
-          </div>
-        </div>
+        <CardAvatars avatars={AVATARS} />
         <div>
           <img width={30} height={30} src={meatballsMenu} />
         </div>
@@ -34,10 +29,7 @@ const ArtCard = () => {
           <img className="art-card__action-icon" src={raribleLogo} />
           <span className="art-card__action-text">Place a bid</span>
         </div>
-        <div className="art-card__like">
-          <img src={likeIcon} className="art-card__like-icon" />
-          <div className="art-card__like-amount">123</div>
-        </div>
+        <LikeCounter amount={123} />
       </div>
     </div>
   );

@@ -1,0 +1,11 @@
+.card-avatars {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.card-avatars__avatar {
+    margin-left: -1rem;
+}
+.card-avatars__avatar:first-child {
+    margin-left: 0;
+}

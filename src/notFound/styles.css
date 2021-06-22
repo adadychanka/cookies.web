@@ -1,0 +1,53 @@
+.not-found {
+
+}
+
+.not-found__header {
+    padding-top: 2rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.not-found__content {
+    padding-top: 5.5rem;
+}
+
+.not-found__card {
+    margin: auto;
+    width: 840px;
+    height: 550px;
+}
+
+.not-found__home-redirect {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 2rem;
+}
+
+.not-found__error {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found__error-title {
+    color: var(--main-text-color);
+
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 252.492px;
+    line-height: 313px;
+}
+.not-found__error-subtitle {
+    color: var(--main-text-color);
+
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+

@@ -49,9 +49,9 @@
 
 .art-card__name {
     padding-bottom: 1rem;
-    color: #FFFFFF;
+    color: var(--main-text-color);
 
-    font-family: Gilroy, 'sans-serif';
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: 800;
     font-size: 1.25rem;
@@ -61,7 +61,7 @@
 .art-card__price {
     color: rgba(255, 255, 255, 0.5);
 
-    font-family: Gilroy, 'sans-serif';
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: 600;
     font-size: 0.825rem;
@@ -91,7 +91,7 @@
     padding-left: 0.25rem;
     color: #FDDA02;
 
-    font-family: Gilroy, 'sans-serif';
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: bold;
     font-size: 1rem;
@@ -100,13 +100,13 @@
 
 .art-card__like {
     display: flex;
-    color: #FFFFFF;
+    color: var(--main-text-color);
     opacity: 0.5;
 }
 
 .art-card__like-icon {
     display: block;
-    color: #FFFFFF;
+    color: var(--main-text-color);
 
     width: 1rem;
     height: 1rem;
@@ -114,13 +114,11 @@
 
 .art-card__like-amount {
     padding-left: 0.5rem;
-    color: #FFFFFF;
+    color: var(--main-text-color);
 
-    font-family: Gilroy, 'sans-serif';
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: bold;
     font-size: 0.825rem;
     line-height: 1rem;
-
-
 }

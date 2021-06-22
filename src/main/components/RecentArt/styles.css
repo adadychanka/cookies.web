@@ -25,9 +25,9 @@
 }
 
 .recent-art__title {
-    color: #FFFFFF;
+    color: var(--main-text-color);
 
-    font-family: Gilroy, 'sans-serif';
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: bold;
     font-size: 6.5rem;
@@ -36,9 +36,9 @@
 }
 
 .recent-art__description {
-    color: #FFFFFF;
+    color: var(--main-text-color);
 
-    font-family: Gilroy, 'sans-serif';
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: 300;
     font-size: 1.5rem;
@@ -63,9 +63,9 @@
 .recent-art__team-text {
     padding-top: 2rem;
 
-    color: #FFFFFF;
+    color: var(--main-text-color);
 
-    font-family: Gilroy, 'sans-serif';
+    font-family: var(--main-font);
     font-style: italic;
     font-weight: normal;
     font-size: 16px;

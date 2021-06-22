@@ -1,0 +1,38 @@
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+
+    border-radius: 1.5rem;
+    background-color: rgba(181, 181, 181, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.card__header-info {
+    display: flex;
+    align-items: center;
+}
+
+.card__header-title {
+    padding-left: 1.5rem;
+    color: var(--main-text-color);
+
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.card__content {
+    padding-top: 2rem;
+}

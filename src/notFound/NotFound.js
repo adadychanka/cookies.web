@@ -1,8 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import Background from "../main/components/Background";
-import Header from "../main/components/Header";
+import Background from "../components/Background";
+import Header from "../components/Header";
 import Card from "./components/Card/Card";
 import { Button } from "../components/Button";
 
@@ -20,7 +20,7 @@ const NotFound = () => {
           <Header />
         </div>
         <main className="not-found__content">
-          <Card className="not-found__card">
+          <Card title="Woof... Woof... Woof..." className="not-found__card">
             <div className="not-found__error">
               <span className="not-found__error-title">404</span>
               <span className="not-found__error-subtitle">Woof... Woof... Woof...</span>

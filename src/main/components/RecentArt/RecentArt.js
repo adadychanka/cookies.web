@@ -26,8 +26,8 @@ const RecentArt = () => {
         <div className="recent-art__info">
           <div className="recent-art__title">Dogecoin Prediction Ball</div>
           <div className="recent-art__description">
-            The NFT token includes personal prediction that will at least bring a smile. No time to hesitate, to the
-            moon!
+            Woof woof, traveler! The NFT token includes personal prediction that will at least bring a smile. No time to
+            hesitate, to the moon!
           </div>
         </div>
         <div className="recent-art__actions">
@@ -44,9 +44,9 @@ const RecentArt = () => {
           </div>
         </div>
         <div className="recent-art__team-text">
-          Our team truly believes that the future will belong to people like us. Our goal is to create something new and
-          move NFT forward. We are glad to present you our first work in a series of interactive NFT projects! The work
-          is done in the style of a very promising currency of the future: Dogecoin!
+          We are glad to present you our first work in a series of utility NFT projects! The work is done in the style
+          of a very promising currency of the future: Dogecoin. The number of copies is strictly limited. This
+          guarantees the unique value of this piece art. Woof woof!
         </div>
       </div>
       <div className="recent-art__card">

@@ -1,9 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Header from "./components/Header";
+import Header from "../components/Header";
 import RecentArt from "./components/RecentArt";
 import "./styles.css";
-import Background from "./components/Background";
+import Background from "../components/Background";
 
 const Main = () => {
   return (

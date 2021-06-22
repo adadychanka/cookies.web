@@ -6,13 +6,13 @@ import LikeCounter from "../../../components/LikeCounter";
 
 import "./styles.css";
 
-const Card = ({ className, children }) => {
+const Card = ({ title, className, children }) => {
   return (
     <div className={classNames("card", className)}>
       <div className="card__header">
         <div className="card__header-info">
           <CardAvatars avatars={AVATARS} />
-          <span className="card__header-title">Woof... Woof... Woof...</span>
+          <span className="card__header-title">{title}</span>
         </div>
         <LikeCounter amount={33} />
       </div>

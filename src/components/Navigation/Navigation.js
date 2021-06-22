@@ -1,6 +1,6 @@
 import React from "react";
 
-import { raribleLogo, twitterLogo } from "../../assets";
+import { raribleLogo, twitterLogo } from "../../main/assets";
 import "./styles.css";
 
 const Nav = () => {

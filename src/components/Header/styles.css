@@ -8,6 +8,10 @@
 
 }
 
+.header__logo a {
+    text-decoration: none;
+}
+
 .header__nav {
 
 }

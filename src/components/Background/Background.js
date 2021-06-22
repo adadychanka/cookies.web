@@ -1,5 +1,5 @@
 import React from "react";
-import { mainBackground } from "../../assets";
+import { mainBackground } from "../../main/assets";
 import "./styles.css";
 
 const Background = ({ children }) => {

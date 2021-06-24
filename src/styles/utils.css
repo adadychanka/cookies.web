@@ -1,3 +1,7 @@
 .u-color-white {
     color: var(--main-text-color);
 }
+
+.u-height-full {
+    height: 100%;
+}

@@ -1,0 +1,40 @@
+.merch-card {
+    width: 345.47px;
+    height: 419.17px;
+    padding: 1.5rem;
+
+    background: inherit;
+    backdrop-filter: inherit;
+    color: var(--main-text-color);
+
+    font-family: var(--main-font);
+}
+
+.merch-card__content {
+
+}
+
+.merch-card__image {
+    width: 296.23px;
+    height: 217.1px;
+}
+
+.merch-card__title {
+    padding-top: 0.75rem;
+
+    text-align: justify;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.merch-card__description {
+    padding-top: 0.75rem;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: justify;
+}

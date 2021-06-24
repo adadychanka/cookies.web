@@ -1,0 +1,8 @@
+.simple-card {
+    background-color: rgba(18, 18, 18, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    backdrop-filter: blur(3rem);
+
+    border-radius: 2rem;
+}

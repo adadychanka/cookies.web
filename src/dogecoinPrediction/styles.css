@@ -1,5 +1,9 @@
 .dogecoin-prediction {
+    display: flex;
+    flex-flow: column nowrap;
 
+    height: 100%;
+    overflow: auto;
 }
 
 .dogecoin-prediction__header {
@@ -13,13 +17,22 @@
     justify-content: center;
 
     padding-top: 5.5rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.dogecoin-prediction__footer {
+    padding-top: 3rem;
 }
 
 .dogecoin-prediction__card {
+    position: relative;
     width: 840px;
     height: 550px;
+}
+
+.dogecoin-prediction__prediction {
+    margin-top: 100px;
 }
 
 .dogecoin-prediction__card-content {
@@ -54,8 +67,8 @@
 
 .dogecoin-prediction__wallet {
     width: 100%;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-top: 1rem;
 }
 
@@ -99,5 +112,27 @@
     font-size: 1rem;
     line-height: 19px;
     text-align: center;
+}
 
+.dogecoin-prediction__delimiter {
+    padding-top: 3rem;
+}
+
+.dogecoin-prediction__merch-title {
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+
+    color: var(--main-text-color);
+
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+.dogecoin-prediction__merch-cards {
+   display: flex;
+    justify-content: space-between;
 }

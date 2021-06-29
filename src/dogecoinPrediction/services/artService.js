@@ -1,7 +1,7 @@
 import http from "./http";
 
-export const getPrediction = async (artId, wallet) => {
-  const uri = `/predictions/${wallet}/${artId}`;
+export const getDogecoinPredictionBallArt = async () => {
+  const uri = `/arts/dogecoinPredictionBall`;
 
   try {
     const response = await http.get(uri);

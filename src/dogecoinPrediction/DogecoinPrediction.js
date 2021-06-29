@@ -1,25 +1,23 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import Background from "../components/Background";
-import { predictionService } from "./services";
 import { ErrorNotification } from "../components/Notification";
 import PredictionCard from "./components/PredictionCard";
 import GeneratePredictionCard from "./components/GeneratePredictionCard";
 import CardSpinner from "./components/CardSpinner";
+import Delimiter from "./components/Delimiter";
+import MerchCard from "./components/MerchCard";
+import { useDogecoinPredictionBallArt } from "./hooks/useArt";
+import { usePrediction } from "./hooks/usePrediction";
+import { merchHologram, merchPrint } from "./assets";
 import "react-toastify/dist/ReactToastify.min.css";
 import "./styles.css";
-import Delimiter from "./components/Delimiter";
-import SimpleCard from "./components/SimpleCard";
-import { merchPrint, merchHologram } from "./assets";
-import MerchCard from "./components/MerchCard";
 
 const DogecoinPrediction = () => {
+  const { art, isArtLoading } = useDogecoinPredictionBallArt();
   const [wallet, setWallet] = useState();
-  const [isLoading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-
-  const [generatedPrediction, setGeneratedPrediction] = useState(null);
+  const { prediction, generatePrediction, predictionError } = usePrediction(art?.id, wallet);
 
   const handleWalletChange = useCallback((e) => {
     const wallet = e.target.value;
@@ -28,18 +26,8 @@ const DogecoinPrediction = () => {
   }, []);
 
   const handleGeneratePrediction = useCallback(async () => {
-    try {
-      setLoading(true);
-      setError(null);
-      const prediction = await predictionService.getPrediction(1, wallet);
-      setGeneratedPrediction(prediction);
-    } catch (error) {
-      const msg = error?.message;
-      setError(msg);
-    } finally {
-      setLoading(false);
-    }
-  }, [wallet]);
+    generatePrediction();
+  }, [generatePrediction]);
 
   return (
     <Background>
@@ -52,8 +40,8 @@ const DogecoinPrediction = () => {
           <Header />
         </div>
         <main className="dogecoin-prediction__content">
-          <CardSpinner isLoading={isLoading} />
-          {false && (
+          <CardSpinner isLoading={isArtLoading} />
+          {!prediction && (
             <div className="dogecoin-prediction__card">
               <GeneratePredictionCard
                 className="u-height-full"
@@ -62,9 +50,9 @@ const DogecoinPrediction = () => {
               />
             </div>
           )}
-          {true && (
+          {prediction && (
             <div className="dogecoin-prediction__prediction">
-              <PredictionCard prediction={generatedPrediction} />
+              <PredictionCard prediction={prediction} />
               <Delimiter className="dogecoin-prediction__delimiter" />
               <section className="dogecoin-prediction__merch">
                 <h4 className="dogecoin-prediction__merch-title">Merch</h4>
@@ -85,7 +73,7 @@ const DogecoinPrediction = () => {
           )}
         </main>
         <footer className="dogecoin-prediction__footer"></footer>
-        <ErrorNotification message={error} />
+        <ErrorNotification message={predictionError} />
       </div>
     </Background>
   );

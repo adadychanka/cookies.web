@@ -4,5 +4,5 @@
     box-sizing: border-box;
     backdrop-filter: blur(3rem);
 
-    border-radius: 2rem;
+    border-radius: var(--card-border-radius);
 }

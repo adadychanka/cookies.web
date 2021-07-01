@@ -52,7 +52,7 @@ const DogecoinPrediction = () => {
           )}
           {prediction && (
             <div className="dogecoin-prediction__prediction">
-              <PredictionCard prediction={prediction} />
+              <PredictionCard prediction={prediction} className="dogecoin-prediction__prediction-card" />
               <Delimiter className="dogecoin-prediction__delimiter" />
               <section className="dogecoin-prediction__merch">
                 <h4 className="dogecoin-prediction__merch-title">Merch</h4>

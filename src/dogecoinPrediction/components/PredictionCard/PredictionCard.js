@@ -1,26 +1,29 @@
 import React from "react";
 import classNames from "classnames";
 import SimpleCard from "../SimpleCard";
-import { dogecoinPredictionArt, twitterIcon, downloadIcon } from "../../assets";
+import { twitterIcon, downloadIcon } from "../../assets";
 import "./styles.css";
 
 const PredictionCard = ({ prediction, className }) => {
   return (
     <SimpleCard className={classNames("prediction-card", className)}>
       <div className="prediction-card__content">
-        <img className="prediction-card__art" src={dogecoinPredictionArt} alt="" />
+        <video className="prediction-card__art" autoFocus autoPlay loop controls>
+          <source src="https://drive.google.com/uc?export=download&id=_" type="video/mp4" />
+        </video>
         <div className="prediction-card__actions">
-          <div className="prediction-card__share">
+          <a className="prediction-card__share" href="#shareOnTwitter">
             <span>Share</span>
-            <a className="prediction-card__share-link" href="#shareOnTwitter">
-              <img src={twitterIcon} className="prediction-card__share-icon" />
-            </a>
-          </div>
-          <div className="prediction-card__download">
-            <a href="#download" className="prediction-card__download-link" target="_blank" rel="noreferrer">
-              <img src={downloadIcon} alt="" className="prediction-card__download-icon" />
-            </a>
-          </div>
+            <img src={twitterIcon} className="prediction-card__share-icon" />
+          </a>
+          <a
+            href="https://drive.google.com/file/d/_/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            className="prediction-card__download"
+          >
+            <img src={downloadIcon} alt="" className="prediction-card__download-icon" />
+          </a>
         </div>
       </div>
     </SimpleCard>

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useState } from "react";
 import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import Background from "../components/Background";

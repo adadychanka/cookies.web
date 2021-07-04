@@ -3,7 +3,7 @@ import cn from "classnames";
 import { variants } from "./utils";
 import "./styles.css";
 
-export const Button = ({ className, onClick, variant, value, name }) => {
+const Button = ({ className, onClick, variant, value, name }) => {
   return (
     <button name={name} onClick={onClick} className={cn("button", className, `button_variant-${variant}`)}>
       {value}

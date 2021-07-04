@@ -4,7 +4,7 @@ import SimpleCard from "../SimpleCard";
 import { twitterIcon, downloadIcon } from "../../assets";
 import "./styles.css";
 
-const PredictionCard = ({ prediction, className }) => {
+const PredictionCard = ({ className }) => {
   return (
     <SimpleCard className={classNames("prediction-card", className)}>
       <div className="prediction-card__content">

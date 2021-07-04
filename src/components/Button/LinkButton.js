@@ -3,7 +3,7 @@ import cn from "classnames";
 import { variants } from "./utils";
 import "./styles.css";
 
-export const LinkButton = ({ className, onClick, variant, value, name, href }) => {
+const LinkButton = ({ className, onClick, variant, value, name, href }) => {
   return (
     <a href={href} name={name} onClick={onClick} className={cn("button", className, `button_variant-${variant}`)}>
       {value}

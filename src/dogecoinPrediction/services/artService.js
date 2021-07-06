@@ -1,7 +1,7 @@
 import http from "./http";
 
 export const getDogecoinPredictionBallArt = async () => {
-  const uri = `api/arts/dogecoinPredictionBall`;
+  const uri = `/api/arts/dogecoinPredictionBall`;
 
   try {
     const response = await http.get(uri);

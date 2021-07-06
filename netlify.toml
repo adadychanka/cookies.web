@@ -1,0 +1,26 @@
+[build]
+  publish="build/"
+  command="yarn build
+
+[context.production.environment]
+  NODE_ENV="dev"
+  API_ENDPOINT="https://predictionballs-api.herokuapp.com/api"
+
+[context.stage.environment]
+  NOVE_ENV="stage"
+  API_ENDPOINT="https://predictionballs-api-stage.herokuapp.com/api"
+
+[[redirects]]
+  from="/dogecoin/prediction"
+  to="/index.html"
+  status=200
+
+[[redirects]]
+  from="/*"
+  to="/index.html"
+  status=200
+
+[[redirects]]
+  from="/api/*"
+  to="{API_ENDPOINT}/:splat"
+  status=200

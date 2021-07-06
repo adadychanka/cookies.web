@@ -16,7 +16,7 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "{API_ENDPOINT}/:splat"
+  to = "{API_ENDPOINT}/api"
   status = 200
 
 [[redirects]]

@@ -1,14 +1,14 @@
-[build]
-  publish = "build/"
-  command = "yarn build
+#[build]
+#  publish = "build/"
+#  command = "yarn build
 
-[context.production.environment]
-  # NODE_ENV = "dev"
-  API_ENDPOINT = "https://predictionballs-api.herokuapp.com/api"
-
-[context.stage.environment]
-  # NOVE_ENV = "stage"
-  API_ENDPOINT = "https://predictionballs-api-stage.herokuapp.com/api"
+#[context.production.environment]
+#  NODE_ENV = "dev"
+#  API_ENDPOINT = "https://predictionballs-api.herokuapp.com/api"
+#
+#[context.stage.environment]
+#  NOVE_ENV = "stage"
+#  API_ENDPOINT = "https://predictionballs-api-stage.herokuapp.com/api"
 
 [[redirects]]
   from = "/dogecoin/prediction"

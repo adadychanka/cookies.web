@@ -11,6 +11,11 @@
   API_ENDPOINT = "https://predictionballs-api-stage.herokuapp.com/api"
 
 [[redirects]]
+  from = "/api/*"
+  to = "{API_ENDPOINT}/:splat"
+  status = 200
+
+[[redirects]]
   from = "/dogecoin/prediction"
   to = "/index.html"
   status = 200
@@ -18,9 +23,4 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/api/*"
-  to = "{API_ENDPOINT}/:splat"
   status = 200

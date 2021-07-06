@@ -3,11 +3,11 @@
   command = "yarn build
 
 [context.production.environment]
-  NODE_ENV = "dev"
+  # NODE_ENV = "dev"
   API_ENDPOINT = "https://predictionballs-api.herokuapp.com/api"
 
 [context.stage.environment]
-  NOVE_ENV = "stage"
+  # NOVE_ENV = "stage"
   API_ENDPOINT = "https://predictionballs-api-stage.herokuapp.com/api"
 
 [[redirects]]

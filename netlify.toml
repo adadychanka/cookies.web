@@ -12,7 +12,7 @@
 
 [context.deploy-preview.environment]
   NOVE_ENV = "dev"
-  API_ENDPOINT = "https://predictionballs-api-stage.herokuapp.com/api"
+  API_ENDPOINT = "https://predictionballs-api-stage.herokuapp.com"
 
 [[redirects]]
   from = "/api/*"

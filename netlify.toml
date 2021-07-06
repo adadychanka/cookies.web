@@ -15,6 +15,11 @@
   REACT_APP_API_ENDPOINT = "https://predictionballs-api-stage.herokuapp.com"
 
 [[redirects]]
+  from = "/api/*"
+  to = "{REACT_APP_API_ENDPOINT}/:splat"
+  status = 200
+
+[[redirects]]
   from = "/dogecoin/prediction"
   to = "/index.html"
   status = 200

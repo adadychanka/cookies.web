@@ -16,7 +16,7 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "{REACT_APP_API_ENDPOINT}/:splat"
+  to = "https://predictionballs-api-stage.herokuapp.com/api/:splat"
   status = 200
 
 [[redirects]]

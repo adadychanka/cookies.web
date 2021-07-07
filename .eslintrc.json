@@ -3,6 +3,9 @@
         "es6": true,
         "browser": true
     },
+    "globals": {
+      "process": "readonly"
+    },
     "extends": [
       "eslint:recommended",
       "plugin:react/recommended",

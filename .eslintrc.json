@@ -3,11 +3,15 @@
         "es6": true,
         "browser": true
     },
+    "globals": {
+      "process": "readonly"
+    },
     "extends": [
       "eslint:recommended",
       "plugin:react/recommended",
       "plugin:import/recommended",
       "plugin:react-hooks/recommended",
+      "plugin:toml/standard",
       "prettier"
     ],
     "parserOptions": {

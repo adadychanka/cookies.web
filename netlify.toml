@@ -3,16 +3,26 @@
   command = "yarn build"
 
 [context.production.environment]
-  NODE_ENV = "production"
-  API_ENDPOINT = "https://predictionballs-api.herokuapp.com"
+  REACT_APP_ENV = "production"
+  REACT_APP_API_ENDPOINT = "https://predictionballs-api.herokuapp.com"
 
 [context.stage.environment]
-  NOVE_ENV = "stage"
-  API_ENDPOINT = "https://predictionballs-api-stage.herokuapp.com"
+  REACT_APP_ENV = "staging"
+  REACT_APP_API_ENDPOINT = "https://predictionballs-api-stage.herokuapp.com"
 
 [context.deploy-preview.environment]
-  NOVE_ENV = "stage"
+  REACT_APP_ENV = "staging"
   REACT_APP_API_ENDPOINT = "https://predictionballs-api-stage.herokuapp.com"
+
+[[redirects]]
+  from = "/api-stage/*"
+  to = "https://predictionballs-api-stage.herokuapp.com/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://predictionballs-api.herokuapp.com/api/:splat"
+  status = 200
 
 [[redirects]]
   from = "/dogecoin/prediction"

@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import { predictionService } from "../services";
+import { predictionService } from "../../services";
 
 export function usePrediction(artId, wallet) {
   const [prediction, setPrediction] = useState(null);

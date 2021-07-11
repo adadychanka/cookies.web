@@ -1,5 +1,5 @@
 import axios from "axios";
-import { environmentConfig } from "../../config";
+import { environmentConfig } from "../config";
 
 const baseURL = "/";
 

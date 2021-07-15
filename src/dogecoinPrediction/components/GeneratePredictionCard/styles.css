@@ -1,0 +1,133 @@
+.generate-prediction-card {
+
+}
+
+.generate-prediction-card__content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 3rem;
+}
+
+.generate-prediction-card__title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+
+    color: var(--main-text-color);
+
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.25rem;
+    line-height: 84px;
+}
+
+.generate-prediction-card__wallet {
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    box-sizing: border-box;
+}
+
+.generate-prediction-card__wallet-input {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    box-sizing: border-box;
+
+    color: var(--main-text-color);
+    border-radius: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+
+    background-color: rgba(18, 18, 18, 0.15);
+    backdrop-filter: blur(24px);
+
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 33px;
+}
+
+.generate-prediction-card__wallet-input_error {
+    border: 1px solid rgba(243, 30, 30, 0.7);
+}
+
+.generate-prediction-card__subtitle {
+    color: var(--main-text-color);
+    text-align: center;
+
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.generate-prediction-card__subtitle_error {
+    --error-block-height: -1rem;
+
+    margin-top: var(--error-block-height);
+}
+
+.generate-prediction-card__error {
+    --error-block-height: 1rem;
+    height: var(--error-block-height); /* Same as font-size */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    color: rgba(243, 30, 30, 1);
+
+    font-size: var(--error-block-height);
+}
+
+.generate-prediction-card__action {
+    padding-top: 1rem;
+}
+
+.generate-prediction-card__support-text {
+    padding-top: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    color: var(--main-text-color);
+    text-align: center;
+
+    font-family: var(--main-font);
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 19px;
+}
+
+@media screen and (max-width: 425px) {
+    .generate-prediction-card__wallet {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .generate-prediction-card__content {
+        padding-top: 1rem;
+    }
+
+    .generate-prediction-card__title {
+        font-size: 3rem;
+    }
+
+    .generate-prediction-card__subtitle {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .generate-prediction-card__support-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

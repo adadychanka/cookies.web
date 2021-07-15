@@ -1,30 +1,50 @@
-import React from "react";
+import React, { useCallback } from "react";
+import cn from "classnames";
 import { Button } from "../../../components/Button";
 import Card from "../../../notFound/components/Card/Card";
+import "./styles.css";
 
-const GeneratePredictionCard = ({ className, onWalletChange, onGenerateClick }) => {
+const GeneratePredictionCard = ({ title, className, onWalletChange, onGenerateClick, supportText, errorMessage }) => {
+  const handleGeneratePrediction = useCallback(
+    (event) => {
+      event.preventDefault();
+
+      onGenerateClick();
+    },
+    [onGenerateClick]
+  );
+
+  const hasError = !!errorMessage;
+
   return (
-    <Card title="Dogecoin prediction ball" className={className}>
-      <div className="dogecoin-prediction__card-content">
-        <div className="dogecoin-prediction__title">Enter your wallet</div>
-        <div className="dogecoin-prediction__wallet">
+    <Card title={title} className={cn("generate-prediction-card", className)}>
+      <form className="generate-prediction-card__content" onSubmit={handleGeneratePrediction}>
+        <div className="generate-prediction-card__title">Enter your wallet</div>
+        <div className="generate-prediction-card__wallet">
           <input
-            className="dogecoin-prediction__wallet-input"
+            className={cn("generate-prediction-card__wallet-input", {
+              "generate-prediction-card__wallet-input_error": hasError,
+            })}
             type="text"
             autoFocus
+            required
             tabIndex={0}
             onChange={onWalletChange}
           />
         </div>
-        <div className="dogecoin-prediction__subtitle">Thank you for your purchase. We hope you will have fun!</div>
-        <div className="dogecoin-prediction__action">
-          <Button value="Generate prediction" onClick={onGenerateClick} />
+        <div className="generate-prediction-card__error">{errorMessage}</div>
+        <div
+          className={cn("generate-prediction-card__subtitle", {
+            "generate-prediction-card__subtitle_error": !hasError,
+          })}
+        >
+          Thank you for your purchase. We hope you will have fun!
         </div>
-        <div className="dogecoin-prediction__support-text">
-          {`Congratulations! You are the proud owner of the limited collection "Dogecoin". It's time to find out
-                which prediction from shiba inu you have got! Hurry up, woof woof!`}
+        <div className="generate-prediction-card__action">
+          <Button value="Generate prediction" onClick={handleGeneratePrediction} />
         </div>
-      </div>
+        <div className="generate-prediction-card__support-text">{supportText}</div>
+      </form>
     </Card>
   );
 };

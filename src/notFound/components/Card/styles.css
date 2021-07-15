@@ -24,6 +24,8 @@
 
 .card__header-title {
     padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
     color: var(--main-text-color);
 
     font-family: var(--main-font);
@@ -35,4 +37,8 @@
 
 .card__content {
     padding-top: 2rem;
+}
+
+.card__footer {
+    padding-bottom: 1.5rem;
 }

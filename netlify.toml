@@ -4,15 +4,12 @@
 
 [context.production.environment]
   REACT_APP_ENV = "production"
-  REACT_APP_API_ENDPOINT = "https://predictionballs-api.herokuapp.com"
 
 [context.stage.environment]
   REACT_APP_ENV = "staging"
-  REACT_APP_API_ENDPOINT = "https://predictionballs-api-stage.herokuapp.com"
 
 [context.deploy-preview.environment]
   REACT_APP_ENV = "staging"
-  REACT_APP_API_ENDPOINT = "https://predictionballs-api-stage.herokuapp.com"
 
 [[redirects]]
   from = "/api-stage/*"
@@ -26,6 +23,11 @@
 
 [[redirects]]
   from = "/dogecoin/prediction"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/dogecoin/prediction/widget"
   to = "/index.html"
   status = 200
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { artService } from "../services";
+import { artService } from "../../services";
 
 function useArt(load) {
   const [art, setArt] = useState(null);

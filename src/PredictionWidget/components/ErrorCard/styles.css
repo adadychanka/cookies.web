@@ -1,0 +1,40 @@
+.error-card {
+    margin: auto;
+    height: 100%;
+}
+
+.error-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-card__error {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-card__error-title {
+    padding-bottom: 2rem;
+
+    text-align: center;
+    color: var(--main-text-color);
+
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.error-card__error-subtitle {
+    text-align: center;
+    color: var(--main-text-color);
+
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+}

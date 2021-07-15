@@ -19,8 +19,6 @@ httpInstance.interceptors.request.use(
       config.url = config.url.replace("api", "api-stage");
     }
 
-    console.log("Config", config);
-
     return config;
   },
   function (error) {

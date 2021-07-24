@@ -1,8 +1,8 @@
 import React, { useState, useCallback } from "react";
-import CardSpinner from "../../dogecoinPrediction/components/CardSpinner";
-import GeneratePredictionCard from "../../dogecoinPrediction/components/GeneratePredictionCard";
+import CardSpinner from "../../components/CardSpinner";
+import GeneratePredictionCard from "./GeneratePredictionCard";
 import { usePrediction } from "../../dogecoinPrediction/hooks/usePrediction";
-import PredictionCard from "../../dogecoinPrediction/components/PredictionCard";
+import PredictionCard from "./PredictionCard";
 import ErrorCard from "./ErrorCard";
 import WidgetErrorBoundary from "./WidgetErrorBoundary";
 import "../styles.css";

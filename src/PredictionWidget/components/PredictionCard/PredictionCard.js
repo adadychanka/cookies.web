@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
-import SimpleCard from "../SimpleCard";
-import { twitterIcon, downloadIcon } from "../../assets";
+import SimpleCard from "../../../components/SimpleCard";
+import { downloadIcon } from "../../../dogecoinPrediction/assets";
 import "./styles.css";
 
 const PredictionCard = ({ prediction, className }) => {
@@ -14,10 +14,6 @@ const PredictionCard = ({ prediction, className }) => {
           <source src={linkToVideo} type="video/mp4" />
         </video>
         <div className="prediction-card__actions">
-          {/*<a className="prediction-card__share" href="#shareOnTwitter">*/}
-          {/*  <span>Share</span>*/}
-          {/*  <img src={twitterIcon} className="prediction-card__share-icon" />*/}
-          {/*</a>*/}
           <a href={linkToDownload} target="_blank" rel="noreferrer" className="prediction-card__download">
             <img src={downloadIcon} alt="Download icon" className="prediction-card__download-icon" />
           </a>

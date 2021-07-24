@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 import cn from "classnames";
 import { Button } from "../../../components/Button";
-import Card from "../../../notFound/components/Card/Card";
+import Card from "../../../components/Card";
 import "./styles.css";
 
 const GeneratePredictionCard = ({ title, className, onWalletChange, onGenerateClick, supportText, errorMessage }) => {

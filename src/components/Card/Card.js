@@ -1,8 +1,8 @@
 import React from "react";
 import classNames from "classnames";
-import CardAvatars from "../../../components/CardAvatars/CardAvatars";
-import { AVATARS } from "../../../constants";
-import LikeCounter from "../../../components/LikeCounter";
+import CardAvatars from "../CardAvatars/CardAvatars";
+import { AVATARS } from "../../constants";
+import LikeCounter from "../LikeCounter";
 
 import "./styles.css";
 

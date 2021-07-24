@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import SimpleCard from "../../../components/SimpleCard";
-import { downloadIcon } from "../../../dogecoinPrediction/assets";
+import { downloadIcon } from "../../../assets";
 import "./styles.css";
 
 const PredictionCard = ({ prediction, className }) => {

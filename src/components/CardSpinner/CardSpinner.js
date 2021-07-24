@@ -1,5 +1,5 @@
 import React from "react";
-import Spinner from "../../../components/Spinner";
+import Spinner from "../Spinner";
 import "./styles.css";
 
 const CardSpinner = ({ isLoading }) => {

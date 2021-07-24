@@ -1,9 +1,39 @@
 .prediction-widget {
     position: relative;
+    display: flex;
+    flex-flow: column nowrap;
     height: 100%;
     min-height: 530px;
+
+    font-size: 16px;
 }
 
 .prediction-widget__form {
     height: 100%;
+}
+
+.prediction-widget__prediction {
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .prediction-widget {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .prediction-widget {
+        font-size: 14px;
+    }
+
+    .card__header {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .card__header-title {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
 }

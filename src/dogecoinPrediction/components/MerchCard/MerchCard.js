@@ -1,5 +1,5 @@
 import React from "react";
-import SimpleCard from "../SimpleCard";
+import SimpleCard from "../../../components/SimpleCard";
 import "./styles.css";
 
 const MerchCard = ({ src, title, description }) => {

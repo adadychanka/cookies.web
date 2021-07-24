@@ -2,10 +2,11 @@ import axios from "axios";
 import { environmentConfig } from "../config";
 
 const baseURL = "/";
+const timeout = 60 * 1000;
 
 const config = {
   baseURL,
-  timeout: 10000,
+  timeout: timeout,
   headers: {
     "Access-Control-Allow-Origin": "*",
   },

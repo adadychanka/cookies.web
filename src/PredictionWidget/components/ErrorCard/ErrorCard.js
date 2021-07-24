@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../../../notFound/components/Card/Card";
+import Card from "../../../components/Card";
 import "./styles.css";
 
 const ErrorCard = ({ cardTitle, mainText, helpText }) => {

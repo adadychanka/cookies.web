@@ -19,7 +19,7 @@
 .prediction-card__actions {
     position: absolute;
     bottom: 0;
-    margin-bottom: -1.5rem;
+    margin-bottom: -1.5em;
 
     display: flex;
     justify-content: center;
@@ -32,9 +32,9 @@
     align-items: center;
 
     width: 133.81px;
-    height: 3rem;
+    height: 3em;
 
-    border-radius: 1.5rem;
+    border-radius: 1.5em;
     background: #06C1EA;
     color: var(--main-text-color);
 
@@ -43,24 +43,24 @@
     font-family: var(--main-font);
     font-style: normal;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .prediction-card__share-icon {
-    padding-left: 1rem;
-    width: 1rem;
-    height: 1rem;
+    padding-left: 1em;
+    width: 1em;
+    height: 1em;
 }
 
 .prediction-card__download {
     display: flex;
     align-items: center;
-    padding-left: 1rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    padding-left: 1em;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .prediction-card__download-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.5em;
+    height: 1.5em;
 }

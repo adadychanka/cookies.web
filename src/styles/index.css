@@ -20,5 +20,5 @@ html, body, #root {
 
     --main-font: 'Montserrat', -apple-system, BlinkMacSystemFont, 'sans-serif';
 
-    --card-border-radius: 2rem;
+    --card-border-radius: 2em;
 }

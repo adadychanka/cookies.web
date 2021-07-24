@@ -3,6 +3,7 @@
 }
 
 .prediction-card__content {
+    position: relative;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -20,7 +21,7 @@
 .prediction-card__actions {
     position: absolute;
     bottom: 0;
-    margin-bottom: -1.5em;
+    margin-bottom: -2em;
 
     display: flex;
     justify-content: center;
@@ -28,16 +29,18 @@
 }
 
 .prediction-card__download {
+    --download-icon-size: 2.5em;
+
     display: flex;
     align-items: center;
     padding-left: 1em;
-    width: 1.5em;
-    height: 1.5em;
+    width: var(--download-icon-size);
+    height: var(--download-icon-size);
 }
 
 .prediction-card__download-icon {
-    width: 1.5em;
-    height: 1.5em;
+    width: var(--download-icon-size);
+    height: var(--download-icon-size);
 }
 
 @media screen and (max-width: 768px) {

@@ -1,5 +1,7 @@
 .prediction-widget {
     position: relative;
+    display: flex;
+    flex-flow: column nowrap;
     height: 100%;
     min-height: 530px;
 
@@ -8,6 +10,10 @@
 
 .prediction-widget__form {
     height: 100%;
+}
+
+.prediction-widget__prediction {
+    margin: auto;
 }
 
 @media screen and (max-width: 768px) {

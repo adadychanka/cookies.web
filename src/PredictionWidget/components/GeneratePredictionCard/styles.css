@@ -35,7 +35,7 @@
 
 .generate-prediction-card__wallet-input {
     display: flex;
-    height: 4em;
+    height: 3em;
     width: 100%;
     padding-left: 3em;
     padding-right: 3em;
@@ -52,8 +52,7 @@
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
-    font-size: 1em;
-    line-height: 33px;
+    font-size: 1.25em;
 }
 
 .generate-prediction-card__wallet-input_error {
